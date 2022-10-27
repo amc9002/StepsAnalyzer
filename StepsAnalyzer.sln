@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StepsAnalyzer", "StepsAnalyzer\StepsAnalyzer.csproj", "{114A79E5-3599-40C4-9C1B-D5B4CA3BB547}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{114A79E5-3599-40C4-9C1B-D5B4CA3BB547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{114A79E5-3599-40C4-9C1B-D5B4CA3BB547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{114A79E5-3599-40C4-9C1B-D5B4CA3BB547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{114A79E5-3599-40C4-9C1B-D5B4CA3BB547}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7757E021-1323-4779-BA7B-B5D88B2C2250}
+	EndGlobalSection
+EndGlobal
