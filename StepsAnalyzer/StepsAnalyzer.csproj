@@ -8,6 +8,162 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="day1.json" />
+    <None Remove="day10.json" />
+    <None Remove="day11.json" />
+    <None Remove="day12.json" />
+    <None Remove="day13.json" />
+    <None Remove="day14.json" />
+    <None Remove="day15.json" />
+    <None Remove="day16.json" />
+    <None Remove="day17.json" />
+    <None Remove="day18.json" />
+    <None Remove="day19.json" />
+    <None Remove="day2.json" />
+    <None Remove="day20.json" />
+    <None Remove="day21.json" />
+    <None Remove="day22.json" />
+    <None Remove="day23.json" />
+    <None Remove="day24.json" />
+    <None Remove="day25.json" />
+    <None Remove="day26.json" />
+    <None Remove="day27.json" />
+    <None Remove="day28.json" />
+    <None Remove="day29.json" />
+    <None Remove="day3.json" />
+    <None Remove="day30.json" />
+    <None Remove="day4.json" />
+    <None Remove="day5.json" />
+    <None Remove="day6.json" />
+    <None Remove="day7.json" />
+    <None Remove="day8.json" />
+    <None Remove="day9.json" />
+    <None Remove="TestData\day1.json" />
+    <None Remove="TestData\day10.json" />
+    <None Remove="TestData\day11.json" />
+    <None Remove="TestData\day12.json" />
+    <None Remove="TestData\day13.json" />
+    <None Remove="TestData\day14.json" />
+    <None Remove="TestData\day15.json" />
+    <None Remove="TestData\day16.json" />
+    <None Remove="TestData\day17.json" />
+    <None Remove="TestData\day18.json" />
+    <None Remove="TestData\day19.json" />
+    <None Remove="TestData\day2.json" />
+    <None Remove="TestData\day20.json" />
+    <None Remove="TestData\day21.json" />
+    <None Remove="TestData\day22.json" />
+    <None Remove="TestData\day23.json" />
+    <None Remove="TestData\day24.json" />
+    <None Remove="TestData\day25.json" />
+    <None Remove="TestData\day26.json" />
+    <None Remove="TestData\day27.json" />
+    <None Remove="TestData\day28.json" />
+    <None Remove="TestData\day29.json" />
+    <None Remove="TestData\day3.json" />
+    <None Remove="TestData\day30.json" />
+    <None Remove="TestData\day4.json" />
+    <None Remove="TestData\day5.json" />
+    <None Remove="TestData\day6.json" />
+    <None Remove="TestData\day7.json" />
+    <None Remove="TestData\day8.json" />
+    <None Remove="TestData\day9.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="TestData\day1.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day10.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day11.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day12.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day13.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day14.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day15.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day16.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day17.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day18.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day19.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day20.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day21.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day22.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day23.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day24.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day25.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day26.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day27.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day28.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day29.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day30.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day4.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day5.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day6.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day7.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day8.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\day9.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 

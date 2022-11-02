@@ -15,7 +15,7 @@ namespace StepsAnalyzer.Controllers
     {
         private static int day = 0;
 
-        private static readonly string pathToFolder = @"..\TestData";
+        private static readonly string pathToFolder = "TestData";
 
         public static readonly List<List<Walker>> walkersByNames = new();
 
@@ -30,8 +30,7 @@ namespace StepsAnalyzer.Controllers
 
                 Console.WriteLine(filename);        //test output
 
-                string pathToJsonFile = pathToFolder + filename;
-                using StreamReader r = new(pathToJsonFile);
+                using StreamReader r = new(filename);
                 string json = r.ReadToEnd();
 
                 List<Walker>? walkers = JsonConvert.DeserializeObject<List<Walker>>(json);
