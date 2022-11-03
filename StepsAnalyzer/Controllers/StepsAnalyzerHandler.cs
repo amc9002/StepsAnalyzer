@@ -17,7 +17,7 @@ namespace StepsAnalyzer.Controllers
 
         private static readonly string pathToFolder = "TestData";
 
-        public static readonly List<List<Walker>> walkersByNames = new();
+        public static readonly List<List<Walker>> walkersByUsers = new();
 
         public static string GetWalkersByNames()
         {
@@ -27,8 +27,6 @@ namespace StepsAnalyzer.Controllers
             foreach (var filename in allFiles)
             {
                 day++;
-
-                Console.WriteLine(filename);        //test output
 
                 using StreamReader r = new(filename);
                 string json = r.ReadToEnd();
@@ -42,19 +40,29 @@ namespace StepsAnalyzer.Controllers
                 foreach (var walker in walkers)
                 {
                     walker.Day = day;
-                    foreach (var walkerByName in walkersByNames)
-                        if (walkerByName.Any(n => n.Name == walker.Name))
+                    foreach (var walkerByUser in walkersByUsers)
+                        if (walkerByUser.Any(n => n.User == walker.User) || walkerByUser.Count == 0)
                         {
-                            walkerByName.Add(walker);
+                            walkerByUser.Add(walker);
                             itContains = true;
                             break;
                         }
 
                     if (!itContains)
-                        walkersByNames.Add(new List<Walker>() { walker });
+                        walkersByUsers.Add(new List<Walker>() { walker });
 
                 }
             }
+
+            Console.WriteLine("   Name                  Average       Best       Worst");
+            Console.WriteLine("-------------------------------------------------------");
+            foreach (var walkerByUser in walkersByUsers)
+            {
+                int bestresult, worstresult;
+                (bestresult, worstresult) = BestWorstResults(walkerByUser);
+                Console.WriteLine($"{walkerByUser[0].User,-25} {AverageAmountOfSteps(walkerByUser),-10}  {bestresult, -10}  {worstresult}");
+            }
+
 
             return "Data read successfully";
         }
@@ -63,16 +71,16 @@ namespace StepsAnalyzer.Controllers
         {
             int amountOfSteps = 0;
             foreach (var walkDay in walkDays)
-                amountOfSteps += walkDay.AmountOfSteps;
+                amountOfSteps += walkDay.Steps;
 
             return amountOfSteps / day;
         }
 
-        public static (int, int) BestWorstResults(List<Walker> walkDays)
+        public static (int, int) BestWorstResults(List<Walker> walkerByUser)
         {
             var results = new List<int>();
-            foreach (Walker walkDay in walkDays)
-                results.Add(walkDay.AmountOfSteps);
+            foreach (var walkDay in walkerByUser)
+                results.Add(walkDay.Steps);
 
             int[] resultsArr = results.ToArray();
             Array.Sort(resultsArr);
